@@ -58,5 +58,12 @@ public class AllController {
 		List<Registration> list=si.deleteRegister(r.getRollno());
 		map.addAttribute("data",list);
 		return "alldata";
-	}	
+	}
+	@RequestMapping(value="/deletesunil")
+	public String deleteRegistersunil(@ModelAttribute Registration r,ModelMap map)
+	{
+		List<Registration> list=si.deleteRegister(r.getRollno());
+		map.addAttribute("data",list);
+		return "alldata";
+	}
 }
